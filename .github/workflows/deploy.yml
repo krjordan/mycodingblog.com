@@ -37,4 +37,4 @@ jobs:
 
       - name: Copy files to server
         run: |
-          rsync -avz --delete /srv/websites/mycodingblog.com/ ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP}}:/srv/websites/mycodingblog.com/
+          rsync -avz --delete ./dist ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP}}:/srv/websites/mycodingblog.com/
