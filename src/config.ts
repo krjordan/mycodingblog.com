@@ -1,10 +1,10 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
-  author: "Sat Naing",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
+  website: "https://mycodingblog.com/", // replace this with your deployed domain
+  author: "Ryan Jordan",
+  desc: "Welcome to 'My Coding Blog', where semicolons meet sass, and code reviews are less about criticism and more about camaraderie. With over a decade of full-stack wizardry under my belt, I'm here to unravel the arcane arts of code—byte by byte. Dive into tutorials that turn complexities into coffee breaks, tech talks that feel more like tales around a campfire, and insights that do more than just solve problems—they inspire. Whether you're here to decode the latest frameworks or decode your Monday motivation, you've found your geeky sanctuary!",
+  title: "My Coding Blog",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 3,
@@ -17,8 +17,8 @@ export const LOCALE = {
 } as const;
 
 export const LOGO_IMAGE = {
-  enable: false,
-  svg: true,
+  enable: true,
+  svg: false,
   width: 216,
   height: 46,
 };
@@ -26,7 +26,7 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/krjordan",
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
@@ -34,31 +34,31 @@ export const SOCIALS: SocialObjects = [
     name: "Facebook",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Facebook`,
-    active: true,
+    active: false,
   },
   {
     name: "Instagram",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Instagram`,
-    active: true,
+    active: false,
   },
   {
     name: "LinkedIn",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://www.linkedin.com/in/ryan-jordan-86712a5",
     linkTitle: `${SITE.title} on LinkedIn`,
     active: true,
   },
   {
     name: "Mail",
-    href: "mailto:yourmail@gmail.com",
+    href: "mailto:me@ryanjordan.dev",
     linkTitle: `Send an email to ${SITE.title}`,
-    active: false,
+    active: true,
   },
   {
     name: "Twitter",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://twitter.com/ryanjordandev",
     linkTitle: `${SITE.title} on Twitter`,
-    active: false,
+    active: true,
   },
   {
     name: "Twitch",
