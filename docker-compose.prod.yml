@@ -1,0 +1,15 @@
+services:
+  app:
+    image: krjordan/mycodingblog.com:latest
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.mycodingblog.rule=Host('mycodingblog.com')"
+      - "traefik.http.routers.mycodingblog.entrypoints=websecure"
+      - "traefik.http.routers.mycodingblog.tls.certresolver=letsencrypt"
+    networks:
+      - web
+      
+networks:
+  web:
+    external: true
