@@ -36,6 +36,8 @@ We use `ed25519` because it offers better security margins compared to the older
 
 ### 2. Installing the Public Key on Your Linode Server
 
+**NOTE:** **_You can install this for your root user, but you'll have to also install the key for your new user. So if you want to skip this, create a user and then come back to install the key on your user, that would probably be ideal. But it's here in case you want to add one for you root user as well._**
+
 Now, let's securely add your public key to your server. Perform this step from your local terminal. Assuming you've just set up this server and are logging in as root initially, here's what you'll do:
 
 ```bash
@@ -118,12 +120,12 @@ After making these changes, users will only be allowed to authenticate using SSH
 Restart the SSH service to apply the policies.
 
 ```bash
-systemctl restart sshd
+systemctl restart ssh.service
 ```
 
 And just like that, your server is now a fortress. Well, almost... you can add fail2ban, configure firewalls, but we'll save that for another episode in this series.
 
-**NOTE:** Make sure you open a second terminal to attempt to log in before logging out of the first session. This way, if something doesn't work as expected, you still have access to change things.
+**NOTE:** Make sure you open a second terminal to attempt to log in with your new user before logging out of the first session. This way, if something doesn't work as expected, you still have access to change things.
 
 ## Wrapping Up and Looking Ahead
 
