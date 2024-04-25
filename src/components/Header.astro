@@ -130,9 +130,12 @@ const { activeNav } = Astro.props;
     @apply flex w-full items-start justify-between p-4 sm:items-center sm:py-8;
   }
   .logo {
-    @apply py-1 text-xl font-semibold;
-    @apply relative z-20; /* Adjusted positioning and layering */
+    @apply relative z-20 py-1 text-xl font-semibold;
   }
+  .logo.menu-active {
+    @apply hidden;
+  }
+
   .hamburger-menu {
     @apply self-end p-2 sm:hidden;
   }
@@ -199,6 +202,7 @@ const { activeNav } = Astro.props;
     const menuBtn = document.querySelector(".hamburger-menu");
     const menuIcon = document.querySelector(".menu-icon");
     const menuItems = document.querySelector("#menu-items");
+    const logo = document.querySelector(".logo");
 
     menuBtn?.addEventListener("click", () => {
       const menuExpanded = menuBtn.getAttribute("aria-expanded") === "true";
@@ -209,6 +213,7 @@ const { activeNav } = Astro.props;
         menuExpanded ? "Open Menu" : "Close Menu"
       );
       menuItems?.classList.toggle("display-none");
+      logo?.classList.toggle("menu-active");
     });
   }
 
