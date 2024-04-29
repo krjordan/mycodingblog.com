@@ -5,12 +5,10 @@ modDatetime:
 title: Preparing to Take the Reins - Setting Up SSH on Ubuntu 22.04 LTS
 featured: true
 draft: false
-description: Recently, I've been looking at hosting the sites I manage on my own server again. It's been a few years since I've done this. I've mostly used Netlify and Vercel for their speed and ease of use. However, after having numerous checks in place with Uptime Robot and Vercel, I just discovered one of my sites was down and had been down for several months. Luckily it wasn't a paying client, but it's not something I can overlook. So I'm heading out on the adventure once again to self host (sort of) through Linode as well as monitoring that I can manage.
+description: Recently, I've been looking at hosting the sites I manage on my own server again. It's been a few years since I've done this. I've mostly used Netlify and Vercel for their speed and ease of use. However, I'd like to have more control over hosting, so I'm heading out on the adventure once again to self host (sort of) through Linode as well as a monitoring service that I can manage.
 ---
 
-Recently, I've been looking at hosting the sites I manage on my own server again. It's been a few years since I've done this. I've mostly used [Netlify](https://www.netlify.com/) and [Vercel](https://vercel.com) for their speed and ease of use. However, after having numerous checks in place with [Uptime Robot](https://uptimerobot.com) and Vercel, I just discovered one of my sites was down and had been down for several months. Luckily it wasn't a paying client, but it's not something I can overlook. So I'm heading out on the adventure once again to self host (sort of) through Linode as well as a monitoring service that I can manage.
-
-I should preface this with saying, that I've been on the free plan with Uptime Robot for years, probably 7ish years to be precise and it is a legacy plan so I sorta get it. They've always served me well, but I don't recall getting notified when this particular site went down due to Vercel making some changes until I logged in to my account and then I magically got a "your site is down" email... 👀 And to be fair, it's very likely that Vercel sent out an email at some point to alert me and I just ignored it or didn't even see it due to the massive amount of spam email that floods my email account. They are both awesome services, but my goal is to make it so there are less points of failure.
+Recently, I've been looking at hosting the sites I manage on my own server again. It's been a few years since I've done this. I've mostly used [Netlify](https://www.netlify.com/) and [Vercel](https://vercel.com) for their speed and ease of use. owever, I'd like to have more control over hosting, so I'm heading out on the adventure once again to self host (sort of) through Linode as well as a monitoring service that I can manage.
 
 ## Why Host Your Own Server?
 
